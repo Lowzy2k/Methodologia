@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c452761-1ec2-4559-96ec-2d37a46f5c82" name="Changes" comment="Dice Board">
+      <change afterPath="$PROJECT_DIR$/src/main/java/game/BoardOperations/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/game/simplespecs.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/methodologia/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/methodologia/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Dice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/methodologia/Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/methodologia/EngineJsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/methodologia/engine.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/methodologia/games.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/game/advancedspecs.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -38,9 +49,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": [
@@ -56,6 +67,7 @@
       <recent name="E:\Methodologia\src" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="game" />
       <recent name="com.example.methodologia" />
     </key>
   </component>

@@ -1,0 +1,11 @@
+{
+  "game": {
+    "players": 4,
+    "board_size": 32,
+    "board_type": "endless",
+    "dice_number": 2,
+    "initial_player_points": 200
+  }
+}
+
+
