@@ -1,24 +1,24 @@
-package game.TileOperations;
+package game.TileStuff;
 
-import game.CardOperations.CardService;
-import game.GameOperations.Player;
+import game.CardStuff.CardInitializer;
+import game.GameStuff.Player;
 
 import java.util.List;
 
-public class BackAndForthTile implements TileService{
+public class Craps implements TileInitializer {
     private int index;
     private String stat;
     private String parameter;
     private int value;
 
-    public BackAndForthTile(){
+    public Craps(){
         this.index = 0;
         this.stat = "";
         this.parameter = "";
         this.value = 0;
     }
 
-    public BackAndForthTile(int index, String stat, String parameter, int value) {
+    public Craps(int index, String stat, String parameter, int value) {
         this.index = index;
         this.stat = stat;
         this.parameter = parameter;
@@ -26,11 +26,12 @@ public class BackAndForthTile implements TileService{
     }
 
     @Override
-    public void executeSpecificTile(Player player, int diceSum, List<CardService> boardCards, List<Player> players){
-        System.out.println("Type of tile: " + this.stat);
-        int playerPosition = player.getPosition();
-        player.setPosition(playerPosition + this.value);
-        System.out.println(player.getName() + " is on tile " + this.index + " which moved them by " + this.value + " to tile " + player.getPosition() + ".");
+    public void executeSpecificTile(Player player, int diceSum, List<CardInitializer> boardCards, List<Player> players){
+        System.out.println("Είδος θέσης: " + this.stat);
+        int playerPoints = player.getPoints();
+        playerPoints += this.value * diceSum;
+        player.setPoints(playerPoints);
+        System.out.println(player.getName() + " είναι στη θέση " + this.index + " οπου του έδωσε " + (this.value * diceSum) + " πόντους (" + this.value + "*" + diceSum + ")." );
     }
 
     public int getIndex(){
@@ -53,9 +54,7 @@ public class BackAndForthTile implements TileService{
         this.index = index;
     }
 
-    public void setStat(String stat){
-        this.stat = stat;
-    }
+    public void setStat(String stat){ this.stat = stat; }
 
     public void setParameter(String parameter){
         this.parameter = parameter;

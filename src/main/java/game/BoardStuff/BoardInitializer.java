@@ -1,15 +1,15 @@
-package game.BoardOperations;
+package game.BoardStuff;
 
-import game.CardOperations.CardService;
+import game.CardStuff.CardInitializer;
 import game.Dice;
-import game.GameOperations.Player;
-import game.RulesOperations.Rule;
-import game.TileOperations.TileService;
+import game.GameStuff.Player;
+import game.Rules.Rule;
+import game.TileStuff.TileInitializer;
 import org.json.simple.JSONArray;
 
 import java.util.List;
 
-public interface BoardService {
+public interface BoardInitializer {
     void initializeBoard();
     void initializeSpecs();
     void initializeDice(int diceNumber);
@@ -21,16 +21,16 @@ public interface BoardService {
     void declareWinner(List<Player> players, int rounds);
     void removePlayer(Player playerPlaying, List<Player> players);
     void playersCurrentState(List<Player> players);
-    void setTiles(List<TileService> tiles);
-    List<TileService> getTiles();
+    void setTiles(List<TileInitializer> tiles);
+    List<TileInitializer> getTiles();
     void setBoardSize(int boardSize);
     int getBoardSize();
     void setBoardType(String boardType);
     String getBoardType();
     void setDice(List<Dice> dice);
     List<Dice> getDice();
-    void setCards(List<CardService> cards);
-    List<CardService> getCards();
+    void setCards(List<CardInitializer> cards);
+    List<CardInitializer> getCards();
     void setRules(List<Rule> rules);
     List<Rule> getRules();
 }

@@ -1,37 +1,42 @@
-package game.TileOperations;
+package game.TileStuff;
 
-import game.CardOperations.CardService;
-import game.GameOperations.Player;
+import game.CardStuff.CardInitializer;
+import game.GameStuff.Player;
 
 import java.util.List;
 
-public class BlankTile implements TileService{
+public class Jump implements TileInitializer {
     private int index;
     private String stat;
     private String parameter;
     private int value;
 
-    public BlankTile(){
+    public Jump(){
         this.index = 0;
         this.stat = "";
         this.parameter = "";
         this.value = 0;
     }
 
-    public BlankTile(int index, String stat, String parameter, int value) {
+    public Jump(int index, String stat, String parameter, int value) {
         this.index = index;
         this.stat = stat;
         this.parameter = parameter;
         this.value = value;
     }
+
     @Override
-    public void executeSpecificTile(Player player, int diceSum, List<CardService> boardCards, List<Player> players){
-        System.out.println("Type of tile: " + this.stat);
-        System.out.println(player.getName() + " is on tile " + this.index + " which has no action.");
+    public void executeSpecificTile(Player player, int diceSum, List<CardInitializer> boardCards, List<Player> players){
+        System.out.println("Είδος θέσης: " + this.stat);
+        int playerPosition = player.getPosition();
+        player.setPosition(playerPosition + this.value);
+        System.out.println(player.getName() + " είναι στη θέση " + this.index + " μετακινήθηκε από την " + this.value + " στη θέση " + player.getPosition() + ".");
     }
+
     public int getIndex(){
         return this.index;
     }
+
     public String getStat(){
         return this.stat;
     }

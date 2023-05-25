@@ -1,4 +1,4 @@
-package game.GameOperations;
+package game.GameStuff;
 
 public class Player {
     private int id;

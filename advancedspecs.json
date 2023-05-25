@@ -1,0 +1,270 @@
+{
+  "game": {
+    "players": 4,
+    "board_size": 32,
+    "board_type": "endless",
+    "dice_number": 2,
+    "initial_player_points": 200
+  },
+  "tiles": [
+    {
+      "index": 0,
+      "stat": "start",
+      "parameter": "points",
+      "value": 200
+    },
+    {
+      "index": 1,
+      "stat": "red",
+      "parameter": "tile",
+      "value": 4
+    },
+    {
+      "index": 2,
+      "stat": "card",
+      "parameter": "card",
+      "value": 0
+    },
+    {
+      "index": 3,
+      "stat": "orange",
+      "parameter": "points",
+      "value": 20
+    },
+    {
+      "index": 4,
+      "stat": "red",
+      "parameter": "tile",
+      "value": 4
+    },
+    {
+      "index": 5,
+      "stat": "card",
+      "parameter": "card",
+      "value": 0
+    },
+    {
+      "index": 6,
+      "stat": "cyan",
+      "parameter": "points",
+      "value": -40
+    },
+    {
+      "index": 7,
+      "stat": "black",
+      "parameter": "points",
+      "value": 50
+    },
+    {
+      "index": 8,
+      "stat": "blank",
+      "parameter": "none",
+      "value": 0
+    },
+    {
+      "index": 9,
+      "stat": "green",
+      "parameter": "tile",
+      "value": -7
+    },
+    {
+      "index": 10,
+      "stat": "gray",
+      "parameter": "dicepoints",
+      "value": 10
+    },
+    {
+      "index": 11,
+      "stat": "card",
+      "parameter": "card",
+      "value": 0
+    },
+    {
+      "index": 12,
+      "stat": "green",
+      "parameter": "tile",
+      "value": -7
+    },
+    {
+      "index": 13,
+      "stat": "blank",
+      "parameter": "none",
+      "value": 0
+    },
+    {
+      "index": 14,
+      "stat": "card",
+      "parameter": "card",
+      "value": 0
+    },
+    {
+      "index": 15,
+      "stat": "cyan",
+      "parameter": "points",
+      "value": -40
+    },
+    {
+      "index": 16,
+      "stat": "blank",
+      "parameter": "none",
+      "value": 0
+    },
+    {
+      "index": 17,
+      "stat": "black",
+      "parameter": "points",
+      "value": 50
+    },
+    {
+      "index": 18,
+      "stat": "blank",
+      "parameter": "none",
+      "value": 0
+    },
+    {
+      "index": 19,
+      "stat": "card",
+      "parameter": "card",
+      "value": 0
+    },
+    {
+      "index": 20,
+      "stat": "gray",
+      "parameter": "dicepoints",
+      "value": 10
+    },
+    {
+      "index": 21,
+      "stat": "card",
+      "parameter": "card",
+      "value": 0
+    },
+    {
+      "index": 22,
+      "stat": "red",
+      "parameter": "tile",
+      "value": 4
+    },
+    {
+      "index": 23,
+      "stat": "gray",
+      "parameter": "dicepoints",
+      "value": 10
+    },
+    {
+      "index": 24,
+      "stat": "blank",
+      "parameter": "none",
+      "value": 0
+    },
+    {
+      "index": 25,
+      "stat": "green",
+      "parameter": "tile",
+      "value": -7
+    },
+    {
+      "index": 26,
+      "stat": "black",
+      "parameter": "points",
+      "value": 50
+    },
+    {
+      "index": 27,
+      "stat": "card",
+      "parameter": "card",
+      "value": 0
+    },
+    {
+      "index": 28,
+      "stat": "orange",
+      "parameter": "points",
+      "value": 20
+    },
+    {
+      "index": 29,
+      "stat": "card",
+      "parameter": "card",
+      "value": 0
+    },
+    {
+      "index": 30,
+      "stat": "cyan",
+      "parameter": "points",
+      "value": -40
+    },
+    {
+      "index": 31,
+      "stat": "orange",
+      "parameter": "points",
+      "value": 20
+    }
+  ],
+  "cards": [
+    {
+      "id": 0,
+      "message": "Παίρνεις +100 πόντους από άλλον παίκτη.",
+      "parameter": "points",
+      "value": 100
+    },
+    {
+      "id": 1,
+      "message": "Πήγαινε στην αρχή.",
+      "parameter": "start",
+      "value": 200
+    },
+    {
+      "id": 2,
+      "message": "Χάνεις -150 πόντους.",
+      "parameter": "points",
+      "value": -150
+    },
+    {
+      "id": 3,
+      "message": "Αλλάξτε τη θέση σας με τον παίκτη που έχει τον ελάχιστο αριθμό πόντων.",
+      "parameter": "tile",
+      "value": -1
+    },
+    {
+      "id": 4,
+      "message": "Αλλάξτε τη θέση σας με τον παίκτη που έχει το μέγιστο αριθμό πόντων.",
+      "parameter": "tile",
+      "value": 1
+    },
+    {
+      "id": 5,
+      "message": "Διπλασίασε τους πόντους σου.",
+      "parameter": "points",
+      "value": 2
+    },
+    {
+      "id": 6,
+      "message": "Κόψτε τους πόντους σας στο μισό..",
+      "parameter": "points",
+      "value": 0.5
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Κανόνας 1: Όλοι οι παίκτες ξεκινούν με 200 πόντους."
+    },
+    {
+      "rule": "Κανόνας 2: Το παιχνίδι τελειώνει μετά από 30 γύρους."
+    },
+    {
+      "rule": "Κανόνας 3: Νικητής είναι όποιος έχει τους περισσότερους πόντους από όλους τους παίκτες."
+    },
+    {
+      "rule": "Κανόνας 4: Η αφαιτερία δίνει +200 πόντους όποτε οι παίκτες την περνούν."
+    },
+    {
+      "rule": "Κανόνας 5: Αν ένας παίκτης ρίξει 2 ίδια ζάρια, θα παίξει ξανά (π.χ. 3 και 3)."
+    },
+    {
+      "rule": "Κανόνας 6: Εάν ένας παίκτης χάσει όλους τους πόντους του, αποκλείεται από το παιχνίδι."
+    },
+    {
+      "rule": "Κανόνας 7: Εάν ένας παίκτης προσγειωθεί σε ένα πλακίδιο μετά από μια ενέργεια, δεν θα εφαρμοστεί η ενέργεια του νέου πλακιδίου σε αυτόν."
+    }
+  ]
+}

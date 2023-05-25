@@ -1,12 +1,12 @@
-package game.TileOperations;
+package game.TileStuff;
 
-import game.CardOperations.CardService;
-import game.GameOperations.Player;
+import game.CardStuff.CardInitializer;
+import game.GameStuff.Player;
 
 import java.util.List;
 import java.util.Random;
 
-public class CardTile implements TileService{
+public class CardTile implements TileInitializer {
     private int index;
     private String stat;
     private String parameter;
@@ -27,11 +27,11 @@ public class CardTile implements TileService{
     }
 
     @Override
-    public void executeSpecificTile(Player player, int diceSum, List<CardService> boardCards, List<Player> players){
-        System.out.println("Type of tile: " + this.stat);
+    public void executeSpecificTile(Player player, int diceSum, List<CardInitializer> boardCards, List<Player> players){
+        System.out.println("Είδος Θέσης: " + this.stat);
         int randomCard = new Random().nextInt(boardCards.size());
-        CardService cardToExecute = boardCards.get(randomCard);
-        System.out.println(player.getName() + " is on tile " + this.index + " and picked a random card.");
+        CardInitializer cardToExecute = boardCards.get(randomCard);
+        System.out.println(player.getName() + " είναι στη θέση " + this.index + " και διαλέγει μια τυχαία κάρτα.");
         cardToExecute.executeSpecificCard(player, players);
     }
     public int getIndex(){

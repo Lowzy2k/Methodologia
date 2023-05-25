@@ -1,15 +1,15 @@
-package game.TileOperations;
+package game.TileStuff;
 
 import org.json.simple.JSONObject;
 
-public class TilesFactory {
-    public static TileService getInstance(JSONObject jsonObject){
+public class TilesPicker {
+    public static TileInitializer getInstance(JSONObject jsonObject){
         final String parameter = jsonObject.get("parameter").toString();
         switch (parameter) {
             case "simple" -> {
                 final int index = Integer.parseInt(jsonObject.get("index").toString());
                 final int value = Integer.parseInt(jsonObject.get("value").toString());
-                return new SimpleTile(index, value);
+                return new FidakiTiles(index, value);
             }
             case "card" -> {
                 final int index = Integer.parseInt(jsonObject.get("index").toString());
@@ -27,19 +27,19 @@ public class TilesFactory {
                 final int index = Integer.parseInt(jsonObject.get("index").toString());
                 final String stat = jsonObject.get("stat").toString();
                 final int value = Integer.parseInt(jsonObject.get("value").toString());
-                return new DicePointsTile(index, stat, parameter, value);
+                return new Craps(index, stat, parameter, value);
             }
             case "tile" -> {
                 final int index = Integer.parseInt(jsonObject.get("index").toString());
                 final String stat = jsonObject.get("stat").toString();
                 final int value = Integer.parseInt(jsonObject.get("value").toString());
-                return new BackAndForthTile(index, stat, parameter, value);
+                return new Jump(index, stat, parameter, value);
             }
             case "none" -> {
                 final int index = Integer.parseInt(jsonObject.get("index").toString());
                 final String stat = jsonObject.get("stat").toString();
                 final int value = Integer.parseInt(jsonObject.get("value").toString());
-                return new BlankTile(index, stat, parameter, value);
+                return new EmptyTile(index, stat, parameter, value);
             }
             default -> {
                 return new Tile();

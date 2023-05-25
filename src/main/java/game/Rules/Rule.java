@@ -1,4 +1,4 @@
-package game.RulesOperations;
+package game.Rules;
 
 public class Rule {
     private String message;
