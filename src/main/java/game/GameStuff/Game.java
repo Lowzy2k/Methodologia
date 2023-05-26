@@ -53,9 +53,9 @@ public class Game {
     public void readPlayersNumber(int userChoice){
         String fileName;
         if (userChoice == 1){
-            fileName = "/simplespecs.json";
+            fileName = "/fidaki.json";
         } else {
-            fileName = "/advancedspecs.json";
+            fileName = "/pointsandcards.json";
         }
         try {
             JSONParser jsonParser = new JSONParser();
@@ -68,7 +68,7 @@ public class Game {
             final int initialPlayerPoints = Integer.parseInt(gameObj.get("initial_player_points").toString());
             this.initializePlayers(playersNumber, initialPlayerPoints);
         } catch (Exception e){
-            System.exit(90); //connectivity error
+            System.exit(90);
         }
     }
 
@@ -85,9 +85,9 @@ public class Game {
     }
 
     public void createBoard(int userChoice){
-        //1 gia limited, 2 gia endless
+
         BoardInitializer gameBoard = BoardPicker.getInstance(userChoice);
-        gameBoard.initializeBoard(); //fortwsh data
+        gameBoard.initializeBoard();
         this.board = gameBoard;
     }
 
@@ -113,16 +113,16 @@ public class Game {
         int rounds=0;
         do {
             for (Player player : this.players) {
-                //gia kathe paikth otan paizei
+
                 this.printMenu(player);
                 final int userChoice = sc.nextInt();
                 switch (userChoice) {
                     case 1 -> {
-                        //roll the dice
+
                         this.playGame(player);
                     }
                     case 2 -> {
-                        //display rules
+
                         this.displayRules();
                     }
                     case 3 -> {

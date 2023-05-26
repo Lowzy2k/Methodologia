@@ -5,34 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c452761-1ec2-4559-96ec-2d37a46f5c82" name="Changes" comment="Dice Board">
-      <change afterPath="$PROJECT_DIR$/advancedspecs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/BoardStuff/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/BoardStuff/BoardPicker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/BoardStuff/FidakiBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/CardStuff/CardPicker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/game/GameStuff/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/BoardOperations/Board.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/BoardOperations/BoardFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/BoardOperations/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/BoardStuff/BoardInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/BoardOperations/LimitedRangeBoard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/CardOperations/CardFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/CardOperations/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/CardStuff/CardInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/GameOperations/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/GameOperations/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/GameStuff/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/RulesOperations/Rule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/Rules/Rule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/TileOperations/BackAndForthTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/TileStuff/Jump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/TileOperations/BlankTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/TileStuff/EmptyTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/TileOperations/CardTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/TileStuff/CardTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/TileOperations/DicePointsTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/TileStuff/Craps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/TileOperations/PointsTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/TileStuff/PointsTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/TileOperations/SimpleTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/TileStuff/FidakiTiles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/TileOperations/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/TileStuff/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/TileOperations/TileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/TileStuff/TileInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/game/TileOperations/TilesFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/TileStuff/TilesPicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/game/advancedspecs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/game/simplespecs.json" beforeDir="false" afterPath="$PROJECT_DIR$/simplespecs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advancedspecs.json" beforeDir="false" afterPath="$PROJECT_DIR$/pointsandcards.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simplespecs.json" beforeDir="false" afterPath="$PROJECT_DIR$/fidaki.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/BoardStuff/FidakiBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/BoardStuff/FidakiBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/BoardStuff/PointsAndCardsBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/BoardStuff/PointsAndCardsBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/CardStuff/PointsCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/CardStuff/PointsCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/CardStuff/TileCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/CardStuff/TileCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/GameStuff/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/GameStuff/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/game/TileStuff/Jump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/game/TileStuff/Jump.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,22 +42,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Methodologia/target&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "F:/Μεθοδολογία",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;module&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Methodologia\target" />

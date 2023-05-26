@@ -30,7 +30,7 @@ public class Jump implements TileInitializer {
         System.out.println("Είδος θέσης: " + this.stat);
         int playerPosition = player.getPosition();
         player.setPosition(playerPosition + this.value);
-        System.out.println(player.getName() + " είναι στη θέση " + this.index + " μετακινήθηκε από την " + this.value + " στη θέση " + player.getPosition() + ".");
+        System.out.println(player.getName() + " είναι στη θέση " + this.index + " και μετακινήθηκε για " + this.value + " στη θέση " + player.getPosition() + ".");
     }
 
     public int getIndex(){

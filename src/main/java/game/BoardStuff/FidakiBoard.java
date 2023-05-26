@@ -52,7 +52,7 @@ public class FidakiBoard implements BoardInitializer {
         try {
             JSONParser jsonParser = new JSONParser();
             String filePath = new File("").getAbsolutePath();
-            String simpleSpecsPath = filePath + "/simplespecs.json";
+            String simpleSpecsPath = filePath + "/fidaki.json";
             JSONObject fileJsonObject = (JSONObject) jsonParser.parse(new FileReader(simpleSpecsPath));
 
             JSONObject gameObj = (JSONObject) fileJsonObject.get("game");

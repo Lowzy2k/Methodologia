@@ -33,17 +33,15 @@ public class TileCard implements CardInitializer {
         });
         System.out.println("Δύναμη κάρτας:" + this.message);
         if ((int)this.value == -1){
-            //Is Minimum Tile
             if (player.getPoints() == sortedPlayers.get(0).getPoints()) {
                 System.out.println("'" + player.getName() + "', έχεις τους λιγότερο δυνατόν πόντους.");
                 return;
             } else {
-                int currentPlayerPosition = player.getPosition(); //Current Player Position
-                int playerPositionToChange = sortedPlayers.get(0).getPosition(); //Player Position to Change
+                int currentPlayerPosition = player.getPosition();
+                int playerPositionToChange = sortedPlayers.get(0).getPosition();
                 int playerIDToChange = sortedPlayers.get(0).getId();
                 for (Player singlePlayer: players){
                     if (singlePlayer.getId() == playerIDToChange){
-                        //Change Position with this player
                         singlePlayer.setPosition(currentPlayerPosition);
                         player.setPosition(playerPositionToChange);
                         break;
@@ -52,16 +50,14 @@ public class TileCard implements CardInitializer {
                 System.out.println("'" + player.getName() + "' άλλαξε θέση με " + sortedPlayers.get(0).getName() + " αφού είχαν τους λιγότερους δυνατόν πόντους.");
             }
         } else {
-            //Is Maximum Tile
             if (player.getPoints() == sortedPlayers.get(sortedPlayers.size() - 1).getPoints()) {
                 System.out.println("'" + player.getName() + "', έχεις το μέγιστο διαθέσιμο αριθμό πόντων.");
             } else {
-                int currentPlayerPosition = player.getPosition(); //Current Player Position
-                int playerPositionToChange = sortedPlayers.get(sortedPlayers.size() - 1).getPosition(); //Player Position to Change
+                int currentPlayerPosition = player.getPosition();
+                int playerPositionToChange = sortedPlayers.get(sortedPlayers.size() - 1).getPosition();
                 int playerIDToChange = sortedPlayers.get(sortedPlayers.size() - 1).getId();
                 for (Player singlePlayer: players){
                     if (singlePlayer.getId() == playerIDToChange){
-                        //Change Position with this player
                         singlePlayer.setPosition(currentPlayerPosition);
                         player.setPosition(playerPositionToChange);
                         break;

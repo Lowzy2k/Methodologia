@@ -54,7 +54,7 @@ public class PointsAndCardsBoard implements BoardInitializer {
         try {
             JSONParser jsonParser = new JSONParser();
             String filePath = new File("").getAbsolutePath();
-            String advancedSpecsPath = filePath + "/advancedspecs.json";
+            String advancedSpecsPath = filePath + "/pointsandcards.json";
             JSONObject fileJsonObject = (JSONObject) jsonParser.parse(new FileReader(advancedSpecsPath));
 
             JSONObject gameObj = (JSONObject) fileJsonObject.get("game");

@@ -46,7 +46,7 @@ public class PointsCard implements CardInitializer {
             double playerPoints = player.getPoints();
             playerPoints += this.value;
             player.setPoints((int)playerPoints);
-            System.out.println(player.getName() + " πέτυχε " + (int)this.value + " πόντους οπότε τώρα έχει " + player.getPoints() + ".");
+            System.out.println(player.getName() + " πέτυχε " + (int)this.value + " οπότε τώρα έχει " + player.getPoints() + ".");
         }
     }
     public int getId() { return this.id; }
